@@ -929,12 +929,20 @@ object {
 }
 
 .wp-element-caption {
+	height: 18px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: .875rem;
-	line-height: 1.25rem;
-	color: rgb(156 163 175);
+	margin-bottom: 1rem;
+	color: #535353;
+	font-size: 14px;
+}
+
+.wp-element-caption a {
+	height: 21px;
+	margin: 0 4px;
+	border-color: #eaeaea;
+	color: #535353;
 }
 
 .img-fit {
