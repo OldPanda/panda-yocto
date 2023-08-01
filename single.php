@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 get_header(); ?>
@@ -18,14 +18,14 @@ get_header(); ?>
 
 		// Previous/next post navigation.
 		the_post_navigation( array(
-			'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next ', 'yocto' ) . '&gt; ' . '</span> ' .
-				'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'yocto' ) . '</span> ' .
+			'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next ', 'panda-yocto' ) . '&gt; ' . '</span> ' .
+				'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'panda-yocto' ) . '</span> ' .
 				'<span class="post-title">%title</span>',
-			'prev_text' => '<span class="meta-nav" aria-hidden="true">' . ' &lt;' . esc_html__( ' Previous', 'yocto' ) . '</span> ' .
-				'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'yocto' ) . '</span> ' .
+			'prev_text' => '<span class="meta-nav" aria-hidden="true">' . ' &lt;' . esc_html__( ' Previous', 'panda-yocto' ) . '</span> ' .
+				'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'panda-yocto' ) . '</span> ' .
 				'<span class="post-title">%title</span>',
 		) );
-			
+
 		// If comments are open or we have at least one comment, load up the comment template.
 		if ( comments_open() || get_comments_number() ) :
 			comments_template();

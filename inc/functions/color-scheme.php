@@ -2,12 +2,12 @@
 /**
  * Generate the CSS for the selected primary color.
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 function yocto_primary_color_css() {
 
 	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'yellow' ) );
-		
+
 	$css = '
 		.site-header {
 			border-top: 10px solid ' . sanitize_hex_color( $primary_color ) . ';
@@ -92,6 +92,6 @@ function yocto_primary_color_css() {
 			background: ' . sanitize_hex_color( $primary_color ) . ';
 		}
 	';
-		
+
 	return apply_filters( 'yocto_primary_color_css', $css );
 }

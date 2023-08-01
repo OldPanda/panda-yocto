@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php 
+	<?php
 	if ( is_singular() ) : ?>
 
 		<header class="entry-header">
@@ -25,26 +25,26 @@
 				the_content();
 				yocto_edit_link();
 				wp_link_pages( array(
-					'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'yocto' ),
+					'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'panda-yocto' ),
 					'after'       => '</div>',
 					'link_before' => '<span>',
 					'link_after'  => '</span>',
-					'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'yocto' ) . ' </span>%',
+					'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'panda-yocto' ) . ' </span>%',
 					'separator'   => '<span class="screen-reader-text">,</span> ',
 				) );
 			?>
 		</div><!-- .entry-content -->
-		
+
 		<?php get_template_part( 'template-parts/entry-footer' ); ?>
-		<?php 
+		<?php
 	else : ?>
 
 		<header class="entry-header">
-			<?php 
+			<?php
 				if ( is_sticky() && is_home() ) :
 					echo yocto_get_svg( array( 'icon' => 'pin' ) );
 				endif;
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); 
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			?>
 		</header>
 
@@ -54,12 +54,12 @@
 				yocto_post_thumbnail();
 				the_excerpt();
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yocto' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'panda-yocto' ),
 					'after'  => '</div>',
 				) );
 			?>
 		</div>
-		<?php 
+		<?php
 	endif; // End check single. ?>
 
 </article><!-- #post-## -->

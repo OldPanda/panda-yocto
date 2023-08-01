@@ -2,18 +2,18 @@
 /**
  * Primary menu.
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 ?>
 
 <?php if ( has_nav_menu( 'primary' ) ) : // Check do we have primary menu. ?>
 
-	<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'yocto' ); ?>">
+	<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'panda-yocto' ); ?>">
 		<button id="js-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-			<?php 
+			<?php
 				echo yocto_get_svg( array( 'icon' => 'bars' ) );
 				echo yocto_get_svg( array( 'icon' => 'close' ) );
-				esc_html_e( 'Menu', 'yocto' ); 
+				esc_html_e( 'Menu', 'panda-yocto' );
 			?>
 		</button>
 		<?php

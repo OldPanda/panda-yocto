@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 		<header class="page-header">
 			<h1 class="page-title">
-				<?php printf( esc_html__( 'Search Results for: %s', 'yocto' ), '<span>' . get_search_query() . '</span>' ); ?>
+				<?php printf( esc_html__( 'Search Results for: %s', 'panda-yocto' ), '<span>' . get_search_query() . '</span>' ); ?>
 			</h1>
 		</header><!-- .page-header -->
 	<?php endif; ?>

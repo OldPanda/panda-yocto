@@ -2,7 +2,7 @@
 /**
  * Entry footer.
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 ?>
 
@@ -10,22 +10,22 @@
 
 	<footer class="entry-footer">
 		<?php
-			yocto_post_terms( array( 
-				'taxonomy' => 'category', 
+			yocto_post_terms( array(
+				'taxonomy' => 'category',
 				'before' => '
 					<div class="entry-terms-wrapper entry-categories-wrapper">
-					<span class="screen-reader-text">' . esc_html__( 'Categories:', 'yocto' ) . ' </span>
-					<span class="icon-wrapper">' . yocto_get_svg( array( 'icon' => 'folder-open' ) ) . '</span>', 
-				'after' => '</div>' 
+					<span class="screen-reader-text">' . esc_html__( 'Categories:', 'panda-yocto' ) . ' </span>
+					<span class="icon-wrapper">' . yocto_get_svg( array( 'icon' => 'folder-open' ) ) . '</span>',
+				'after' => '</div>'
 			) );
 
-			yocto_post_terms( array( 
-				'taxonomy' => 'post_tag', 
+			yocto_post_terms( array(
+				'taxonomy' => 'post_tag',
 				'before' => '
 					<div class="entry-terms-wrapper entry-tags-wrapper">
-					<span class="screen-reader-text">' . esc_html__( 'Tags:', 'yocto' ) . ' </span>
+					<span class="screen-reader-text">' . esc_html__( 'Tags:', 'panda-yocto' ) . ' </span>
 					<span class="icon-wrapper">' . yocto_get_svg( array( 'icon' => 'hashtag' ) ) . '</span>',
-				'after' => '</div>' 
+				'after' => '</div>'
 			) );
 		?>
 	</footer><!-- .entry-footer -->

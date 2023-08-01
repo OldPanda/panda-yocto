@@ -2,7 +2,7 @@
 /**
  * Outputs body open tag and provides fallback for older WordPress versions.
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 function yocto_body_open() {
 	if ( function_exists( 'wp_body_open' ) ) {

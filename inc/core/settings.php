@@ -1,8 +1,8 @@
 <?php
 /**
  * Theme General Settings.
- * 
- * @package Yocto
+ *
+ * @package Panda Yocto
  */
 
 if ( ! function_exists( 'yocto_setup' ) ) :
@@ -17,7 +17,7 @@ if ( ! function_exists( 'yocto_setup' ) ) :
 		 * If you're building a theme based on yocto, use a find and replace
 		 * to change 'yocto' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'yocto', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'panda-yocto', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -40,7 +40,7 @@ if ( ! function_exists( 'yocto_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'yocto' ),
+			'primary' => esc_html__( 'Primary', 'panda-yocto' ),
 		) );
 
 		/*
@@ -88,4 +88,3 @@ function yocto_content_width() {
 }
 
 add_action( 'after_setup_theme', 'yocto_content_width', 0 );
-

@@ -1,14 +1,14 @@
-<?php 
+<?php
 if ( ! function_exists( 'yocto_site_branding' ) ) :
 	/**
 	 * Prints HTML with site branding: Logo, Site title and tagline.
 	 *
-	 * @package Yocto
+	 * @package Panda Yocto
 	 */
 	function yocto_site_branding() {
 		// Display the logo
 		yocto_logo();
-				
+
 		// Site Title.
 		if ( is_front_page() && is_home() ) : ?>
 			<h1 class="site-title">
@@ -16,7 +16,7 @@ if ( ! function_exists( 'yocto_site_branding' ) ) :
 					<?php bloginfo( 'name' ); ?>
 				</a>
 			</h1>
-			<?php 
+			<?php
 		else : ?>
 			<p class="site-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -25,7 +25,7 @@ if ( ! function_exists( 'yocto_site_branding' ) ) :
 			</p>
 			<?php
 		endif;
-				
+
 		// Site Tagline.
 		$description = get_bloginfo( 'description', 'display' );
 		if ( $description || is_customize_preview() ) : ?>

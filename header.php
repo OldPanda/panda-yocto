@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 ?><!DOCTYPE html>
@@ -15,13 +15,13 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-	
+
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 	<?php yocto_body_open(); ?>
-	<a class="screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'yocto' ); ?></a>
+	<a class="screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'panda-yocto' ); ?></a>
 
 	<header class="site-header" role="banner">
 		<div class="container site-header-container">

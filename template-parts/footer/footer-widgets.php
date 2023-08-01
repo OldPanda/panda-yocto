@@ -4,19 +4,19 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
-if ( 
-	! is_active_sidebar( 'footer-1' ) && 
-	! is_active_sidebar( 'footer-2' ) && 
-	! is_active_sidebar( 'footer-3' ) && 
+if (
+	! is_active_sidebar( 'footer-1' ) &&
+	! is_active_sidebar( 'footer-2' ) &&
+	! is_active_sidebar( 'footer-3' ) &&
 	! is_active_sidebar( 'footer-4' ) ) {
 	return;
 }
 ?>
 
-<aside class="footer-widgets" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'yocto' ); ?>">
+<aside class="footer-widgets" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'panda-yocto' ); ?>">
 	<div class="container">
 
 		<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
@@ -42,6 +42,6 @@ if (
 				<?php dynamic_sidebar( 'footer-4' ); ?>
 			</div><!-- .widget-area -->
 		<?php endif; ?>
-		
+
 	</div><!-- .grid-wrapper -->
 </aside><!-- .footer-widgets-wrapper -->

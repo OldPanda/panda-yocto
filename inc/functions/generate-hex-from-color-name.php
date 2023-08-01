@@ -4,7 +4,7 @@
  *
  * @return string
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 function yocto_generate_hex_from_color_name( $color ) {
 	switch ( $color ) {

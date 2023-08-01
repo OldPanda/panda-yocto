@@ -1,8 +1,8 @@
-<?php 
+<?php
 /**
  * Entry meta content for displaying post date and author.
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 if ( 'post' === get_post_type() ) : ?>

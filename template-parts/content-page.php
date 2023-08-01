@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 ?>
@@ -21,7 +21,7 @@
 			yocto_edit_link();
 			wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'yocto' ),
+					'before' => '<div class="page-links">' . __( 'Pages:', 'panda-yocto' ),
 					'after'  => '</div>',
 				)
 			);

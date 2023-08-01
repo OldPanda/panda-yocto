@@ -1,14 +1,14 @@
 /*!
-Theme Name: Yocto
-Theme URI: https://humblethemes.com/themes/yocto
-Author: Humble Themes
-Author URI: https://humblethemes.com
-Description: Yocto is a lightweight and hyper-fast theme that is built for professional writers, bloggers and content marketers. It's also 100% Gutenberg ready.
-Version: 1.0.11
+Theme Name: Panda Yocto
+Theme URI: https://github.com/OldPanda/panda-yocto
+Author: lucaskowalski, matheusfd, OldPanda
+Author URI: https://old-panda.com/
+Description: Panda Yocto is a fork of Yocto by Humble Themes, maintained by OldPanda. Similar as Yocto, Panda Yocto is also a lightweight and hyper-fast WordPress theme that is built for professional writers, bloggers and content marketers.
+Version: 2.0.0.dev
 Requires PHP: 5.6
-Tested up to: 5.5.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: yocto
+Tested up to: 6.6.2
+Text Domain: panda-yocto
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: one-column, accessibility-ready, custom-menu, custom-logo, featured-images, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready
 */

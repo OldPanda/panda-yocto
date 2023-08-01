@@ -1,4 +1,4 @@
-<?php 
+<?php
 if ( ! function_exists( 'yocto_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
@@ -6,7 +6,7 @@ if ( ! function_exists( 'yocto_post_thumbnail' ) ) :
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 *
-	 * @package Yocto
+	 * @package Panda Yocto
 	 */
 	function yocto_post_thumbnail() {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
@@ -17,6 +17,6 @@ if ( ! function_exists( 'yocto_post_thumbnail' ) ) :
 			<?php the_post_thumbnail(); ?>
 		</div><!-- .post-thumbnail -->
 
-	<?php 
+	<?php
 	}
 endif;
