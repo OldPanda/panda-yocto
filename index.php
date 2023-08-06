@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 get_header(); ?>
@@ -17,7 +17,7 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
-		
+
 		endwhile;
 
 		yocto_posts_pagination();

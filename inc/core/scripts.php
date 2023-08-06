@@ -2,7 +2,7 @@
 /**
  * Theme stylesheets and scripts.
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 function yocto_scripts() {
@@ -42,9 +42,9 @@ add_action( 'wp_enqueue_scripts', 'yocto_scripts' );
  * Display custom color CSS.
  */
 function yocto_colors_css_wrap() {
-	$primary_color = get_theme_mod( 'primary_color', 'yellow' );
+	$primary_color = get_theme_mod( 'primary_color', 'lightblue' );
 
-	if ( 'yellow' === $primary_color && ! is_customize_preview() ) {
+	if ( 'lightblue' === $primary_color && ! is_customize_preview() ) {
 		return;
 	}
 
@@ -52,7 +52,7 @@ function yocto_colors_css_wrap() {
 	$style .= yocto_primary_color_css();
 	$style .= yocto_gutenberg_colors_css();
 	$style .= '</style>';
-	
+
 	echo $style;
 }
 

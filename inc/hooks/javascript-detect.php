@@ -4,7 +4,7 @@
  *
  * Adds a `js` class to the root `<html>` element when JavaScript is detected.
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 function yocto_javascript_detection() {

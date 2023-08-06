@@ -8,13 +8,13 @@ if ( ! function_exists( 'yocto_edit_link' ) ) :
 	 * of the template hierarchy and their content. Helpful when/if the single-page
 	 * layout with multiple posts/pages shown gets confusing.
 	 *
-	 * @package Yocto
+	 * @package Panda Yocto
 	 */
 	function yocto_edit_link() {
 		edit_post_link(
 			sprintf(
 				/* translators: %s: Name of current post */
-				__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'yocto' ),
+				__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'panda-yocto' ),
 				get_the_title()
 			),
 			'<span class="edit-link">',

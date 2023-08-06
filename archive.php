@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 get_header(); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 	<?php endif; ?>
 
 	<?php
-	if ( have_posts() ) : 
+	if ( have_posts() ) :
 		/* Start the Loop */
 		while ( have_posts() ) : the_post();
 

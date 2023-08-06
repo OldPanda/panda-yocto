@@ -2,7 +2,7 @@
 /**
  * Theme Customizer
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 /**
@@ -26,9 +26,9 @@ function yocto_customize_register( $wp_customize ) {
 		) );
 	}
 
-	$wp_customize->add_setting( 'primary_color', 
+	$wp_customize->add_setting( 'primary_color',
 		array(
-			'default'           => 'yellow',
+			'default'           => 'lightblue',
 			'transport'         => 'postMessage',
 			'sanitize_callback' => 'yocto_sanitize_colorscheme',
 		)
@@ -37,12 +37,12 @@ function yocto_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'primary_color', array(
 			'type'     => 'radio',
-			'label'    => __( 'Primary color', 'yocto' ),
+			'label'    => __( 'Primary color', 'panda-yocto' ),
 			'choices'  => array(
-				'yellow'    => __( 'Yellow', 'yocto' ),
-				'red'       => __( 'Red', 'yocto' ),
-				'green'     => __( 'Green', 'yocto' ),
-				'lightblue' => __( 'Light blue', 'yocto' ),
+				'yellow'    => __( 'Yellow', 'panda-yocto' ),
+				'red'       => __( 'Red', 'panda-yocto' ),
+				'green'     => __( 'Green', 'panda-yocto' ),
+				'lightblue' => __( 'Light blue', 'panda-yocto' ),
 			),
 			'section'  => 'colors',
 			'priority' => 5,
@@ -82,7 +82,7 @@ function yocto_sanitize_colorscheme( $input ) {
 		return $input;
 	}
 
-	return 'yellow';
+	return 'lightblue';
 }
 
 /**
@@ -91,11 +91,11 @@ function yocto_sanitize_colorscheme( $input ) {
 add_action( 'customize_preview_init', 'yocto_customize_preview_js' );
 function yocto_customize_preview_js() {
 	$yocto_theme = wp_get_theme();
-	wp_enqueue_script( 
-		'yocto-customizer', 
-		get_template_directory_uri() . '/assets/js/customize-preview.js', 
-		array( 'customize-preview' ), 
-		$yocto_theme->get( 'Version' ), 
-		true 
+	wp_enqueue_script(
+		'yocto-customizer',
+		get_template_directory_uri() . '/assets/js/customize-preview.js',
+		array( 'customize-preview' ),
+		$yocto_theme->get( 'Version' ),
+		true
 	);
 }

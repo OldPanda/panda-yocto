@@ -1,15 +1,15 @@
-=== Panda Yocto ===
-Contributors: lucaskowalski, matheusfd, OldPanda
+=== Yocto ===
+Contributors: lucaskowalski, matheusfd
 Requires at least: 4.7
 Tested up to: 5.5
-Version: 2.0.0.dev
-License: GPLv3
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Version: 1.0.10
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, accessibility-ready, custom-menu, custom-logo, featured-images, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready
 
 == Description ==
 
-Panda Yocto is a fork of Yocto by Humble Themes, maintained by OldPanda. Similar as Yocto, Panda Yocto is also a lightweight and hyper-fast WordPress theme that is built for professional writers, bloggers and content marketers.
+Yocto is a lightweight and hyper-fast theme that is built for professional writers, bloggers and content marketers. It's also 100% Gutenberg ready.
 
 
 == Documentation & Theme Support ==
@@ -18,18 +18,19 @@ Panda Yocto is a fork of Yocto by Humble Themes, maintained by OldPanda. Similar
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Click 'Upload Theme' button at the top of the page.
-3. Click 'Choose File', then select the theme zip file and click 'Install Now'.
-4. After installation, navigate to the 'Appearance' page via your sidebar, find the theme 'Panda Yocto', then 'Activate'.
+2. Type in Yocto in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+4. Go to https://docs.humblethemes.com/yocto for a documentation & guide on how to customize this theme.
+5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 == Copyright ==
 
-Panda Yocto WordPress Theme, Copyright 2023 OldPanda
-Panda Yocto is distributed under the terms of the GNU GPL
+Yocto WordPress Theme, Copyright 2018 HumbleThemes
+Yocto is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
+the Free Software Foundation, either version 2 of the License, or
 (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
@@ -37,7 +38,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-Panda Yocto bundles the following third-party resources:
+Yocto bundles the following third-party resources:
 
 normalize.css, Copyright 2012-2018 Nicolas Gallagher and Jonathan Neal
 License: MIT
@@ -58,10 +59,6 @@ License: CC0 License
 https://www.pexels.com/photo/body-of-water-between-mountain-formation-212275/
 
 == Changelog ==
-
-= 2.0.0 =
-
-- Release Date: TBD
 
 = 1.0.11 =
 

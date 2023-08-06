@@ -2,7 +2,7 @@
 /**
  * Theme Gutenberg support
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 
 if ( ! function_exists( 'yocto_add_gutenberg_support' ) ) :
@@ -13,8 +13,8 @@ if ( ! function_exists( 'yocto_add_gutenberg_support' ) ) :
 		 * Add support for full and wide align images.
 		 */
 		add_theme_support( 'align-wide' );
-		
-		/* The embed blocks automatically apply styles to embedded content 
+
+		/* The embed blocks automatically apply styles to embedded content
 		 * to reflect the aspect ratio of content that is embedded in an iFrame.
 		 */
 		add_theme_support( 'responsive-embeds' );
@@ -23,7 +23,7 @@ if ( ! function_exists( 'yocto_add_gutenberg_support' ) ) :
 		 * Overriding default colour palette
 		 */
 		$gutenberg_colors = yocto_generate_gutenberg_color_palette();
-		add_theme_support( 'editor-color-palette', $gutenberg_colors ); 
+		add_theme_support( 'editor-color-palette', $gutenberg_colors );
 	}
 
 endif;
@@ -35,7 +35,7 @@ add_action( 'after_setup_theme', 'yocto_add_gutenberg_support' );
  */
 function yocto_gutenberg_styles() {
 	$yocto_theme = wp_get_theme();
-	
+
 	wp_enqueue_style( 'yocto-gutenberg', get_theme_file_uri( '/assets/css/editor.min.css' ), false, $yocto_theme->get( 'Version' ) );
 	wp_add_inline_style( 'yocto-gutenberg', yocto_gutenberg_colors_css() );
 }
@@ -47,13 +47,13 @@ add_action( 'enqueue_block_editor_assets', 'yocto_gutenberg_styles' );
  * that will be applied to block editor assets.
  */
 function yocto_gutenberg_colors_css() {
-	
-	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'yellow' ) );
+
+	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'lightblue' ) );
 
 	$css  = '';
 	$css .= '.has-yocto-primary-color { color: ' . esc_attr( $primary_color ) . ' }';
 	$css .= '.has-yocto-primary-background-color { background-color: ' . esc_attr( $primary_color ) . '; }';
-	
+
 	return wp_strip_all_tags( $css );
 }
 
@@ -66,7 +66,7 @@ function yocto_generate_gutenberg_color_palette() {
 
 	$user_color = yocto_generate_user_gutenberg_colors_array();
 	$default_colors = yocto_generate_default_gutenberg_colors_array();
-	
+
 	return array_merge( $user_color, $default_colors );
 }
 
@@ -75,7 +75,7 @@ function yocto_generate_gutenberg_color_palette() {
  */
 function yocto_generate_user_gutenberg_colors_array() {
 
-	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'yellow' ) );
+	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'lightblue' ) );
 
 	return array(
 		array(

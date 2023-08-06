@@ -29,7 +29,7 @@ if ( ! function_exists( 'yocto_get_post_terms' ) ) :
 			'after'      => '',
 			'items_wrap' => '<span %s>%s</span>',
 			/* Translators: Separates tags, categories, etc. when displaying a post. */
-			'sep'        => '<span class="screen-reader-text">' . esc_html_x( ', ', 'taxonomy terms separator', 'yocto' ) . '</span>'
+			'sep'        => '<span class="screen-reader-text">' . esc_html_x( ', ', 'taxonomy terms separator', 'panda-yocto' ) . '</span>'
 		);
 
 		$args = wp_parse_args( $args, $defaults );
@@ -48,7 +48,7 @@ if ( ! function_exists( 'yocto_get_post_terms' ) ) :
 endif;
 
 if ( ! function_exists( 'yocto_post_terms' ) ) :
-	
+
 	/**
 	 * Outputs a post's taxonomy terms.
 	 *

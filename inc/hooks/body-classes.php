@@ -5,7 +5,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  *
- * @package Yocto
+ * @package Panda Yocto
  */
 add_filter( 'body_class', 'yocto_body_classes' );
 
