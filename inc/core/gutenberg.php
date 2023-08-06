@@ -48,7 +48,7 @@ add_action( 'enqueue_block_editor_assets', 'yocto_gutenberg_styles' );
  */
 function yocto_gutenberg_colors_css() {
 
-	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'lightblue' ) );
+	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'yellow' ) );
 
 	$css  = '';
 	$css .= '.has-yocto-primary-color { color: ' . esc_attr( $primary_color ) . ' }';
@@ -75,7 +75,7 @@ function yocto_generate_gutenberg_color_palette() {
  */
 function yocto_generate_user_gutenberg_colors_array() {
 
-	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'lightblue' ) );
+	$primary_color = yocto_generate_hex_from_color_name( get_theme_mod( 'primary_color', 'yellow' ) );
 
 	return array(
 		array(

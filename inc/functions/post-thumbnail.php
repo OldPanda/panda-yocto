@@ -14,7 +14,10 @@ if ( ! function_exists( 'yocto_post_thumbnail' ) ) :
 		} ?>
 
 		<div class="post-thumbnail">
-			<?php the_post_thumbnail(); ?>
+			<?php
+				the_post_thumbnail();
+				echo '<figcaption class="wp-element-caption">' . get_the_post_thumbnail_caption() . '</figcaption>';
+			?>
 		</div><!-- .post-thumbnail -->
 
 	<?php

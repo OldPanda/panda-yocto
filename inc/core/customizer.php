@@ -28,7 +28,7 @@ function yocto_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'primary_color',
 		array(
-			'default'           => 'lightblue',
+			'default'           => 'yellow',
 			'transport'         => 'postMessage',
 			'sanitize_callback' => 'yocto_sanitize_colorscheme',
 		)
@@ -82,7 +82,7 @@ function yocto_sanitize_colorscheme( $input ) {
 		return $input;
 	}
 
-	return 'lightblue';
+	return 'yellow';
 }
 
 /**
