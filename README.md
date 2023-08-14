@@ -65,3 +65,5 @@ Release Date: August 13, 2023
 
 * Adds caption under the images in a post
 * Adds support for WordPress 6.3
+
+Checkout [Yocto's readme file](https://github.com/OldPanda/panda-yocto/blob/master/yocto-readme.txt) for past releases.
